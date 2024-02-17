@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./MyStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="con">
+    <center>
+        <div class="box">
+            <h1>Expence Tracker</h1>
+            <div class="balance" id="balance"><span>₹ </span>0.0</div>
+            <div class="bellowbelence">Your Balance</div>
+            <div class="heading">Transections</div>
+            <div class="vertical-line"></div>
+            <div style="height: 200px; overflow: auto; margin:10px" class="display">
+            <table>
+                <tr class="row r1">
+                    <td class="des" id="d1"> </td>
+                    <td class="amt"id=a1> </td>
+                    <td class="del"id=del1></td>
+                </tr>
+                <tr class="row r2">
+                    <td class="des" id="d2"> </td>
+                    <td class="amt" id="a2"> </td>
+                    <td class="del" id="del2"></td>
+                </tr>
+                <tr class="row r3">
+                    <td class="des" id="d3"></td>
+                    <td class="amt"id=a3></td>
+                    <td class="del"id=del3></td>
+                </tr>
+                <tr class="row r4">
+                    <td class="des" id="d4"></td>
+                    <td class="amt" id="a4"></td>
+                    <td class="del" id="del4"></td>
+                </tr>
+                <tr class="row r5">
+                    <td class="des" id="d5"></td>
+                    <td class="amt"id=a5></td>
+                    <td class="del"id=del5></td>
+                </tr>
+                <tr class="row r6">
+                    <td class="des" id="d6"></td>
+                    <td class="amt" id="a6"></td>
+                    <td class="del" id="del6"></td>
+                </tr>
+                <tr class="row r7">
+                    <td class="des" id="d7"></td>
+                    <td class="amt" id="a7"></td>
+                    <td class="del" id="del7"></td>
+                </tr>
+                <tr class="row r8">
+                    <td class="des" id="d8"></td>
+                    <td class="amt"id=a8></td>
+                    <td class="del"id=del8></td>
+                </tr>
+                <tr class="row r9">
+                    <td class="des" id="d9"></td>
+                    <td class="amt" id="a9"></td>
+                    <td class="del" id="del9"></td>
+                </tr>
+                <tr class="row r10">
+                    <td class="des" id="d10"></td>
+                    <td class="amt" id="a10"></td>
+                    <td class="del" id="del10"></td>
+                </tr>
+                <tr class="row r11">
+                    <td class="des" id="d11"></td>
+                    <td class="amt"id=a11></td>
+                    <td class="del"id=del11></td>
+                </tr>
+                <tr class="row r12">
+                    <td class="des" id="d12"></td>
+                    <td class="amt" id="a12"></td>
+                    <td class="del" id="del12"></td>
+                </tr>
+            </table>
+        </div>
+            <div class="heading">Add Transection</div>
+            <div class="C1" style="text-align: right;font-weight: bold;margin-right: 50px;">Ammount:</div>
+            <input type="text" id="Description" placeholder="Description">
+            <input type="number" id="Ammount" oninput="updateButton()" min="1" max="100000000">
+            <button class="ern" onclick="addTransaction()"><div class="ammount"><span>₹ </span>00.0</div>Earning</button>
+            <button class="exp" onclick="subtractTransaction()"><div class="ammount"><span>₹ </span>00.0</div>Expenses</button>
+        </div>
+    </center>
+    </div>  
+    <script src="./MyScript.js"></script>
+</body>
+</html>
+
+
